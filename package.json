@@ -1,0 +1,11 @@
+{
+  "name": "twofactorauth-json",
+  "version": "0.1.0",
+  "description": "Generates combined JSON file from 2factorauth/twofactorauth daily",
+  "main": "index.js",
+  "dependencies": {
+    "yaml": "^1.10.0"
+  },
+  "author": "Vladimir Kucherenko",
+  "license": "MIT"
+}
