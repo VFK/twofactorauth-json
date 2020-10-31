@@ -26,6 +26,7 @@ let results = fs.readdirSync(`${tfaDir}/_data`).flatMap(yamlFile => {
 
 console.log(`Generated ${results.length} items.`);
 
+fs.rmdirSync(outputDir, {recursive: true});
 fs.mkdirSync(outputDir);
 fs.writeFileSync(`${outputDir}/data.json`, JSON.stringify(results));
 fs.renameSync(`${tfaDir}/img`, `${outputDir}/img`);
